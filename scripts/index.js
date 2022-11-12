@@ -22,10 +22,3 @@ function includeHTML() {
   }
 }
 includeHTML();
-
-const btn = document.querySelector("button");
-
-btn.addEventListener("click", (e) => {
-  e.preventDefault();
-  location.href = "/pages/verify.html";
-});

@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=DM Sans");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primary: #00855D;
+$custom-bgcolor: #D1D1D1;
+$font: "DM Sans";
+
+
+.parent {
+    display: flex;
+
+    .include {
+        width: 40%;
+        height: 100%;
+    }
+}
+
+main {
+    width: 60%;
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+
+    img {
+        margin: 20px 0;
+        width: 170px;
+    }
+
+    .header {
+        margin-top: 20px;
+        h2 {
+            color: #191919;
+            font: {
+                size: 28px;
+                weight: 700;
+                family: $font;
+            }
+        }
+        p {
+            margin-top: 3px;
+            font: {
+                size: 18px;
+                family: $font;
+            }
+            color: #8B8B8B;
+        }
+    }
+
+    form {
+        margin-top: 20px;
+
+        div:first-child, div:nth-child(2) {
+            border: 1px solid #D1D1D1;
+            border-radius: 8px;
+            padding: 8px 16px;
+            width: 520px;
+            height: 56px;
+            display: flex;
+            justify-content: start;
+            align-items: flex-end;
+            text-align: center;
+            position: relative;
+            margin-bottom: 15px;
+
+            p {
+                font-family: $font;
+                font-size: 10px;
+                position: absolute;
+                top: 3px;
+                color: #AEAEAE;
+            }
+
+            input {
+                border: none;
+                outline: none;
+                width: 100%;
+                padding-bottom: 5px;
+            }
+        }
+
+        .password {
+            .see-pass {
+                width: 20px;
+                position: absolute;
+                right: 8px;
+                top: 20px;
+                color: gray;
+                cursor: pointer;
+            }
+
+            p:last-child {
+                color: $primary;
+            }
+        }
+
+        > p {
+            color: $primary;
+            position: relative;
+            top: -10px;
+            font-size: 13px;
+            font-family: $font;
+            cursor: pointer;
+        }
+
+        button {
+            width: 240px;
+            height: 52px;
+            background-color: $primary;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        .last-content {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            p {
+                font-family: $font;
+                color: #696969;
+                font-size: 14px;
+            }
+
+            p:last-child {
+                color: $primary;
+                cursor: pointer;
+            }
+        }
+    }
+}
