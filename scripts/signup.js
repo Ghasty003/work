@@ -22,3 +22,14 @@ function includeHTML() {
   }
 }
 includeHTML();
+
+const showPassword = document.querySelector(".see-pass");
+const input = document.querySelector(".password input");
+
+showPassword.addEventListener("click", () => {
+  if (input.type === "text") {
+    input.type = "password";
+  } else if (input.type === "password") {
+    input.type = "text";
+  }
+});

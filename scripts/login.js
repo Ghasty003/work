@@ -1,4 +1,4 @@
-//Include side.html file in verify.html
+//Include side.html file in login.html
 
 function includeHTML() {
   let z, i, elmnt, file, xhttp;
@@ -22,10 +22,3 @@ function includeHTML() {
   }
 }
 includeHTML();
-
-const btn = document.querySelector("button");
-
-btn.addEventListener("click", (e) => {
-  e.preventDefault();
-  location.href = "/pages/signup.html";
-});

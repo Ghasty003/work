@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=DM Sans");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.parent .include {
+  width: 40%;
+  height: 100%;
+}
+
+main {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main img {
+  margin: 20px 0;
+  width: 170px;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .circle {
+  width: 20px;
+  height: 20px;
+  background-color: #D1D1D1;
+  margin: 2px;
+  border-radius: 50%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 12px;
+  font-family: "Mulish";
+}
+
+main .circle-one {
+  background-color: #00855D;
+  position: relative;
+  left: 2px;
+}
+
+main .circle-two {
+  background-color: #00855D;
+  position: relative;
+  left: -2px;
+}
+
+main .circle-three {
+  background-color: #00855D;
+  position: relative;
+  left: -6px;
+}
+
+main .dash {
+  width: 30px;
+  height: 1px;
+  background-color: #D1D1D1;
+}
+
+main .dash-two {
+  position: relative;
+  left: -4px;
+}
+
+main .header {
+  margin-top: 20px;
+}
+
+main .header h2 {
+  color: #191919;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "DM Sans";
+}
+
+main .header p {
+  margin-top: 3px;
+  font-size: 18px;
+  font-family: "DM Sans";
+  color: #8B8B8B;
+}
+
+main form {
+  margin-top: 20px;
+}
+
+main form div {
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 520px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+main form div p {
+  font-family: "DM Sans";
+  font-size: 10px;
+  position: absolute;
+  top: 3px;
+  color: #AEAEAE;
+}
+
+main form div input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+main form .password .see-pass {
+  width: 20px;
+  position: absolute;
+  right: 8px;
+  top: 20px;
+  color: gray;
+  cursor: pointer;
+}
+
+main form button {
+  width: 240px;
+  height: 52px;
+  background-color: #00855D;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+  cursor: pointer;
+}
+/*# sourceMappingURL=signup.css.map */
