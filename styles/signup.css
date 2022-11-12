@@ -30,8 +30,8 @@ main {
 }
 
 main img {
-  margin: 20px 0;
-  width: 170px;
+  margin: 1.25rem 0;
+  width: 10.625rem;
 }
 
 main .container {
@@ -60,7 +60,7 @@ main .circle {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: "Mulish";
 }
 
@@ -83,7 +83,7 @@ main .circle-three {
 }
 
 main .dash {
-  width: 30px;
+  width: 1.875rem;
   height: 1px;
   background-color: #D1D1D1;
 }
@@ -99,14 +99,14 @@ main .header {
 
 main .header h2 {
   color: #191919;
-  font-size: 28px;
+  font-size: 1.175rem;
   font-weight: 700;
   font-family: "DM Sans";
 }
 
 main .header p {
   margin-top: 3px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "DM Sans";
   color: #8B8B8B;
 }
@@ -119,8 +119,8 @@ main form div {
   border: 1px solid #D1D1D1;
   border-radius: 8px;
   padding: 8px 16px;
-  width: 520px;
-  height: 56px;
+  width: 32.5rem;
+  height: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,7 +137,7 @@ main form div {
 
 main form div p {
   font-family: "DM Sans";
-  font-size: 10px;
+  font-size: 0.625rem;
   position: absolute;
   top: 3px;
   color: #AEAEAE;
@@ -151,7 +151,7 @@ main form div input {
 }
 
 main form .password .see-pass {
-  width: 20px;
+  width: 1.25rem;
   position: absolute;
   right: 8px;
   top: 20px;
@@ -160,8 +160,8 @@ main form .password .see-pass {
 }
 
 main form button {
-  width: 240px;
-  height: 52px;
+  width: 15rem;
+  height: 3.25rem;
   background-color: #00855D;
   border: none;
   border-radius: 8px;

@@ -26,18 +26,18 @@
 }
 
 .include h2 {
-  font-size: 26px;
+  font-size: 1.625rem;
   color: #1C1C1E;
-  width: 401px;
-  height: 34px;
+  width: 25.0625rem;
+  height: 2.125rem;
   font-family: "DM sans";
   margin: 8px 0;
 }
 
 .include p {
   color: #8E8E93;
-  width: 401px;
-  height: 48px;
+  width: 25.0625rem;
+  height: 3rem;
   font-family: "DM sans";
 }
 /*# sourceMappingURL=side.css.map */

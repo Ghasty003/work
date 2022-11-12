@@ -40,7 +40,7 @@ main .header {
 
 main .header h2 {
   color: #191919;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
   font-family: "DM Sans";
 }
@@ -92,7 +92,7 @@ main form div:first-child input, main form div:nth-child(2) input {
 }
 
 main form .password .see-pass {
-  width: 20px;
+  width: 1.25rem;
   position: absolute;
   right: 8px;
   top: 20px;
@@ -108,7 +108,7 @@ main form > p {
   color: #00855D;
   position: relative;
   top: -10px;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-family: "DM Sans";
   cursor: pointer;
 }
@@ -138,11 +138,15 @@ main form .last-content {
 main form .last-content p {
   font-family: "DM Sans";
   color: #696969;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 main form .last-content p:last-child {
-  color: #00855D;
   cursor: pointer;
+}
+
+main form .last-content p:last-child a {
+  color: #00855D;
+  text-decoration: none;
 }
 /*# sourceMappingURL=login.css.map */

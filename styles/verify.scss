@@ -47,7 +47,7 @@ main {
         justify-content: center;
         align-items: center;
         color: white;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-family: "Mulish";
     }
 
@@ -86,7 +86,7 @@ main {
             h2 {
                 color: #191919;
                 font: {
-                    size: 28px;
+                    size: 1.75rem;
                     weight: 700;
                     family: $font;
                 }
@@ -94,7 +94,7 @@ main {
             p {
                 margin-top: 3px;
                 font: {
-                    size: 18px;
+                    size: 1.125rem;
                     family: $font;
                 }
                 color: #8B8B8B;
@@ -121,8 +121,8 @@ main {
             }
 
             button {
-                width: 240px;
-                height: 52px;
+                width: 15rem;
+                height: 3.25rem;
                 background-color: $primary;
                 border: none;
                 border-radius: 8px;

@@ -60,7 +60,7 @@ main .circle {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: "Mulish";
 }
 
@@ -98,14 +98,14 @@ main .main-content {
 
 main .main-content div:first-child h2 {
   color: #191919;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
   font-family: "DM Sans";
 }
 
 main .main-content div:first-child p {
   margin-top: 3px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "DM Sans";
   color: #8B8B8B;
 }
@@ -134,8 +134,8 @@ main .main-content form div input {
 }
 
 main .main-content form button {
-  width: 240px;
-  height: 52px;
+  width: 15rem;
+  height: 3.25rem;
   background-color: #00855D;
   border: none;
   border-radius: 8px;

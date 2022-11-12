@@ -36,7 +36,7 @@ main {
         h2 {
             color: #191919;
             font: {
-                size: 28px;
+                size: 1.75rem;
                 weight: 700;
                 family: $font;
             }
@@ -85,7 +85,7 @@ main {
 
         .password {
             .see-pass {
-                width: 20px;
+                width: 1.25rem;
                 position: absolute;
                 right: 8px;
                 top: 20px;
@@ -102,7 +102,7 @@ main {
             color: $primary;
             position: relative;
             top: -10px;
-            font-size: 13px;
+            font-size: 0.8125rem;
             font-family: $font;
             cursor: pointer;
         }
@@ -127,12 +127,16 @@ main {
             p {
                 font-family: $font;
                 color: #696969;
-                font-size: 14px;
+                font-size: 0.875rem;
             }
 
             p:last-child {
-                color: $primary;
                 cursor: pointer;
+                
+                a {
+                    color: $primary;
+                    text-decoration: none;
+                }
             }
         }
     }

@@ -26,7 +26,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 100px;
+  padding-left: 6.25rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -34,8 +34,8 @@ main {
 }
 
 main img {
-  margin: 20px 0;
-  width: 170px;
+  margin: 1.25px 0;
+  width: 10.625rem;
 }
 
 main .container {
@@ -48,8 +48,8 @@ main .container {
 }
 
 main .circle {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   background-color: #D1D1D1;
   margin: 2px;
   border-radius: 50%;
@@ -64,45 +64,45 @@ main .circle {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: "Mulish";
 }
 
 main .circle-one {
   background-color: #00855D;
   position: relative;
-  left: 2px;
+  left: 0.125rem;
 }
 
 main .circle-two {
   position: relative;
-  left: -2px;
+  left: -0.125rem;
 }
 
 main .circle-three {
   position: relative;
-  left: -6px;
+  left: -0.375rem;
 }
 
 main .dash {
-  width: 30px;
-  height: 1px;
+  width: 1.875rem;
+  height: 0.0625rem;
   background-color: #D1D1D1;
 }
 
 main .dash-two {
   position: relative;
-  left: -4px;
+  left: -0.25rem;
 }
 
 main .main-content {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 main .main-content h2 {
   color: #191919;
   font-family: "DM Sans";
-  margin-top: 4px;
+  margin-top: 0.25rem;
 }
 
 main .main-content p {
@@ -111,11 +111,11 @@ main .main-content p {
 }
 
 main form {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 main form div:first-child {
-  border: 2px solid #90E4CB;
+  border: 0.125rem solid #90E4CB;
   border-radius: 8px;
   padding: 8px 16px;
   width: 520px;
@@ -135,7 +135,7 @@ main form div:first-child {
 
 main form div:first-child p {
   font-family: "DM Sans";
-  font-size: 10px;
+  font-size: 0.625rem;
   position: absolute;
   top: 3px;
   color: #AEAEAE;
@@ -169,7 +169,7 @@ main form .container div {
 }
 
 main form .container div p {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "DM Sans";
   color: #191919;
 }
@@ -210,7 +210,7 @@ main .ask {
 
 main .ask p {
   font-family: "DM Sans";
-  font-size: 14px;
+  font-size: 0.875;
 }
 
 main .ask p:first-child {
@@ -218,7 +218,11 @@ main .ask p:first-child {
 }
 
 main .ask p:last-child {
-  color: #00855D;
   cursor: pointer;
+}
+
+main .ask p:last-child a {
+  color: #00855D;
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */
