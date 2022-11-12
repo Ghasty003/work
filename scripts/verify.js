@@ -1,3 +1,5 @@
+//Include side.html file in verify.html
+
 function includeHTML() {
   let z, i, elmnt, file, xhttp;
   z = document.getElementsByTagName("*");
@@ -20,3 +22,10 @@ function includeHTML() {
   }
 }
 includeHTML();
+
+const btn = document.querySelector("button");
+
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  location.href = "/pages/personal-details.html";
+});

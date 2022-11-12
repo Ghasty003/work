@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=DM Sans");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primary: #00855D;
+$custom-bgcolor: #D1D1D1;
+$font: "DM Sans";
+
+
+.parent {
+    display: flex;
+
+    .include {
+        width: 40%;
+        height: 100%;
+    }
+}
+
+main {
+    width: 60%;
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+
+    img {
+        margin: 20px 0;
+        width: 170px;
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        background-color: $custom-bgcolor;
+        margin: 2px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        font-family: "Mulish";
+    }
+
+    .circle-one {
+        background-color: $primary;
+        position: relative;
+        left: 2px;
+    }
+
+    .circle-two {
+        background-color: $primary;
+        position: relative;
+        left: -2px;
+    }
+
+    .circle-three {
+        position: relative;
+        left: -6px;
+    }
+
+    .dash {
+        width: 30px;
+        height: 1px;
+        background-color: $custom-bgcolor;
+    }
+
+    .dash-two {
+        position: relative;
+        left: -4px;
+    }
+
+    .main-content {
+        margin-top: 20px;
+
+        div:first-child {
+            h2 {
+                color: #191919;
+                font: {
+                    size: 28px;
+                    weight: 700;
+                    family: $font;
+                }
+            }
+            p {
+                margin-top: 3px;
+                font: {
+                    size: 18px;
+                    family: $font;
+                }
+                color: #8B8B8B;
+            }
+        }
+
+        form {
+            div {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 370px;
+                margin-top: 20px;
+
+                input {
+                    width: 55px;
+                    height: 56px;
+                    border: 1px solid #D1D1D1;
+                    border-radius: 8px;
+                    outline: none;
+                    text-align: center;
+                    color: #696969;
+                }
+            }
+
+            button {
+                width: 240px;
+                height: 52px;
+                background-color: $primary;
+                border: none;
+                border-radius: 8px;
+                color: white;
+                text-align: center;
+                margin: 20px 0;
+                cursor: pointer;
+            }
+        }
+    }
+}

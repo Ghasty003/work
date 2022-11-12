@@ -9,7 +9,7 @@
 </head>
 <body>
     <section class="parent">
-        <div class="include" w3-include-html="side.html"></div>
+        <div class="include" w3-include-html="./pages/side.html"></div>
         <main>
             <img src="./images/logo-dark2x.png" alt="">
             <div class="container">
@@ -28,12 +28,16 @@
             <form action="">
                 <div>
                     <p>Your email</p>
-                    <input type="email" placeholder="jeff.browm@example.com">
+                    <input type="email" placeholder="jeff.brown@example.com">
                 </div>
 
-                <div>
+                <div class="container">
                     <input type="checkbox">
-                    <p>I agree to EvergreenFX <span>Privacy Policy</span> & <span>Terms.</span></p>
+                    <div>
+                        <p>I agree to EvergreenFX</p>
+                        <p>Privacy Policy </p> & 
+                        <p> Terms.</p>
+                    </div>
                 </div>
 
                 <button>Proceed</button>
@@ -45,8 +49,7 @@
             </div>
         </main>
 
-
     </section>
-    <script src="./index.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
