@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Mulish');
+@import url("https://fonts.googleapis.com/css?family=DM Sans");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$custom-bgcolor: #D1D1D1;
+$font: "DM Sans";
+
+.parent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+
+    .include {
+        width: 40%;
+        height: 100%;
+    }
+}
+
+main {
+    width: 60%;
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+
+    img {
+        margin: 20px 0;
+        width: 170px;
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        background-color: $custom-bgcolor;
+        margin: 2px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        font-family: "Mulish";
+    }
+
+    .circle-one {
+        background-color: #00855D;
+        position: relative;
+        left: 2px;
+    }
+
+    .circle-two {
+        position: relative;
+        left: -2px;
+    }
+
+    .circle-three {
+        position: relative;
+        left: -6px;
+    }
+
+    .dash {
+        width: 30px;
+        height: 1px;
+        background-color: $custom-bgcolor;
+    }
+
+    .dash-two {
+        position: relative;
+        left: -4px;
+    }
+
+    .main-content {
+        margin-top: 20px;
+        h2 {
+            color: #191919;
+            font-family: $font;
+            margin-top: 4px;
+        }
+        p {
+            font-family: $font;
+            color: #8B8B8B;
+        }
+    }
+
+    form {
+        margin-top: 20px;
+        div:first-child {
+            border: 2px solid #90E4CB;
+            border-radius: 8px;
+            padding: 8px 16px;
+            width: 520px;
+            height: 56px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            text-align: center;
+            position: relative;
+
+            p {
+                font-family: $font;
+                font-size: 10px;
+                position: absolute;
+                top: 3px;
+                color: #AEAEAE;
+            }
+
+            input {
+                border: none;
+                outline: none;
+                width: 100%;
+            }
+        }
+
+        div:nth-child(2) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 330px;
+            margin-top: 20px;
+
+            p {
+                font-size: 14px;
+                font-family: $font;
+                color: #191919;
+
+                span {
+                    color: #00855D;
+                }
+            }
+        }
+
+        button {
+            width: 240px;
+            height: 52px;
+            background-color: #00855D;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+    }
+
+    .ask {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+
+        p {
+            font: {
+                family: $font;
+                size: 14px;
+            }
+        }
+
+        p:first-child {
+            color: #696969;
+        }
+
+        p:last-child {
+            color: #00855D;
+        }
+    }
+}

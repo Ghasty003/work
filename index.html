@@ -4,15 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>EvergreenFFx</title>
 </head>
 <body>
-    <section>
-        <div w3-include-html="side.html"></div>
-        <div>
+    <section class="parent">
+        <div class="include" w3-include-html="side.html"></div>
+        <main>
+            <img src="./images/logo-dark2x.png" alt="">
+            <div class="container">
+                <div class="circle circle-one">1</div>
+                <div class="dash"></div>
+                <div class="circle circle-two">2</div>
+                <div class="dash dash-two"></div>
+                <div class="circle circle-three">3</div>
+            </div>
 
-        </div>
+            <div class="main-content">
+                <h2>Create account</h2>
+                <p>We’ll send an OTP to verify your email</p>
+            </div>
+
+            <form action="">
+                <div>
+                    <p>Your email</p>
+                    <input type="email" placeholder="jeff.browm@example.com">
+                </div>
+
+                <div>
+                    <input type="checkbox">
+                    <p>I agree to EvergreenFX <span>Privacy Policy</span> & <span>Terms.</span></p>
+                </div>
+
+                <button>Proceed</button>
+            </form>
+
+            <div class="ask">
+                <p>Already Have an Account?</p>
+                <p>Login</p>
+            </div>
+        </main>
+
+
     </section>
     <script src="./index.js"></script>
 </body>
