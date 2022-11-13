@@ -29,7 +29,7 @@
                 </div>
 
                 <form action="./signup.html">
-                    <div>
+                    <div class="otp">
                         <input type="text" required>
                         <input type="text" required>
                         <input type="text" required>
@@ -44,5 +44,23 @@
     </section>
     
     <script src="../scripts/index.js"></script>
+    <script>
+        const OTPinput = document.querySelectorAll(".otp input");
+        OTPinput[0].focus();
+        
+        OTPinput.forEach( (input, index) => {
+            input.addEventListener("input", () => {
+                for( let i = 0; i < index + 1; i++ ) {
+                    i < 5 ?  OTPinput[i + 1].focus() : ""
+
+                    if( (i != 0) && (OTPinput[i].value === "") ) {
+                        OTPinput[i - 1].focus();
+                    } else if( i === 0 && (OTPinput[i].value === "") ) {
+                        OTPinput[0].focus();
+                    }
+                }
+            })
+        })
+    </script>
 </body>
 </html>

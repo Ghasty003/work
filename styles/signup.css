@@ -2,16 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .parent .include {
   width: 40%;
   height: 100%;
@@ -19,30 +15,18 @@
 
 main {
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 100px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 main img {
   margin: 1.25rem 0;
   width: 10.625rem;
 }
-
 main .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 main .circle {
   width: 20px;
   height: 20px;
@@ -50,91 +34,68 @@ main .circle {
   margin: 2px;
   border-radius: 50%;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-size: 0.75rem;
   font-family: "Mulish";
 }
-
 main .circle-one {
   background-color: #00855D;
   position: relative;
   left: 2px;
 }
-
 main .circle-two {
   background-color: #00855D;
   position: relative;
   left: -2px;
 }
-
 main .circle-three {
   background-color: #00855D;
   position: relative;
   left: -6px;
 }
-
 main .dash {
   width: 1.875rem;
   height: 1px;
   background-color: #D1D1D1;
 }
-
 main .dash-two {
   position: relative;
   left: -4px;
 }
-
 main .header {
   margin-top: 20px;
 }
-
 main .header h2 {
   color: #191919;
   font-size: 1.175rem;
   font-weight: 700;
   font-family: "DM Sans";
 }
-
 main .header p {
   margin-top: 3px;
   font-size: 1.125rem;
   font-family: "DM Sans";
   color: #8B8B8B;
 }
-
 main form {
   margin-top: 20px;
 }
-
 main form > div {
   border: 1px solid #D1D1D1;
   border-radius: 8px;
   padding: 8px 16px;
   width: 32.5rem;
   height: 3.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: start;
+  align-items: flex-end;
   text-align: center;
   position: relative;
   margin-bottom: 15px;
 }
-
 main form > div p {
   font-family: "DM Sans";
   font-size: 0.625rem;
@@ -142,14 +103,12 @@ main form > div p {
   top: 3px;
   color: #AEAEAE;
 }
-
 main form > div input {
   border: none;
   outline: none;
   width: 100%;
   padding-bottom: 5px;
 }
-
 main form .password .see-pass {
   width: 1.25rem;
   position: absolute;
@@ -158,7 +117,6 @@ main form .password .see-pass {
   color: gray;
   cursor: pointer;
 }
-
 main form button {
   width: 15rem;
   height: 3.25rem;
@@ -170,32 +128,23 @@ main form button {
   margin: 20px 0;
   cursor: pointer;
 }
-
 main .strength {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 4px;
   margin-left: 0.3125rem;
   width: 80%;
 }
-
 main .strength p {
   font-size: 0.8125rem;
-  font-font-family: "DM Sans";
+  font-family: "DM Sans";
   color: #191919;
 }
-
 main .strength p:last-child {
   color: #00855D;
 }
-
 main .lines {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 main .lines div {
   width: 6.25rem;
   height: 4px;
@@ -213,28 +162,18 @@ main .lines div {
   }
   main {
     width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
     padding-left: 0;
   }
 }
-
 @media (max-width: 570px) {
   main form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   main form > div {
     width: 28rem;
@@ -245,14 +184,11 @@ main .lines div {
     top: 15px;
   }
   main .strength {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     text-align: start;
     margin-left: -8px;
   }
 }
-
 @media (max-width: 480px) {
   main form > div {
     width: 18rem;
@@ -262,5 +198,4 @@ main .lines div {
     width: 5rem;
     height: 2px;
   }
-}
-/*# sourceMappingURL=signup.css.map */
+}/*# sourceMappingURL=signup.css.map */

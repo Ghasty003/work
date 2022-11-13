@@ -2,29 +2,18 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .include {
   background-color: #FAFAFA;
   height: 100%;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .include h2 {
   font-size: 1.625rem;
   color: #1C1C1E;
@@ -33,11 +22,9 @@
   font-family: "DM sans";
   margin: 8px 0;
 }
-
 .include p {
   color: #8E8E93;
   width: 25.0625rem;
   height: 3rem;
   font-family: "DM sans";
-}
-/*# sourceMappingURL=side.css.map */
+}/*# sourceMappingURL=side.css.map */

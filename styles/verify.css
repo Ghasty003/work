@@ -2,16 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .parent .include {
   width: 40%;
   height: 100%;
@@ -19,30 +15,18 @@
 
 main {
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 100px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 main img {
   margin: 20px 0;
   width: 170px;
 }
-
 main .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 main .circle {
   width: 20px;
   height: 20px;
@@ -50,79 +34,58 @@ main .circle {
   margin: 2px;
   border-radius: 50%;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-size: 0.75rem;
   font-family: "Mulish";
 }
-
 main .circle-one {
   background-color: #00855D;
   position: relative;
   left: 2px;
 }
-
 main .circle-two {
   background-color: #00855D;
   position: relative;
   left: -2px;
 }
-
 main .circle-three {
   position: relative;
   left: -6px;
 }
-
 main .dash {
   width: 30px;
   height: 1px;
   background-color: #D1D1D1;
 }
-
 main .dash-two {
   position: relative;
   left: -4px;
 }
-
 main .main-content {
   margin-top: 20px;
 }
-
 main .main-content div:first-child h2 {
   color: #191919;
   font-size: 1.75rem;
   font-weight: 700;
   font-family: "DM Sans";
 }
-
 main .main-content div:first-child p {
   margin-top: 3px;
   font-size: 1.125rem;
   font-family: "DM Sans";
   color: #8B8B8B;
 }
-
 main .main-content form div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   width: 370px;
   margin-top: 20px;
 }
-
 main .main-content form div input {
   width: 55px;
   height: 55px;
@@ -132,7 +95,6 @@ main .main-content form div input {
   text-align: center;
   color: #696969;
 }
-
 main .main-content form button {
   width: 15rem;
   height: 3.25rem;
@@ -154,33 +116,21 @@ main .main-content form button {
   }
   main {
     width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
     padding-left: 0;
   }
   main .main-content form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
-
 @media (max-width: 540px) {
   main .main-content form div {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   main .main-content form div input {
@@ -190,5 +140,4 @@ main .main-content form button {
   main .main-content div:first-child p {
     font-size: 1.025rem;
   }
-}
-/*# sourceMappingURL=verify.css.map */
+}/*# sourceMappingURL=verify.css.map */

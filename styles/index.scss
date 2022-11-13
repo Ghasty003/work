@@ -199,6 +199,7 @@ main {
 
 @media (max-width:1050px) {
     .parent {
+        text-align: center;
         .include {
             display: none;
         }
@@ -207,6 +208,8 @@ main {
     main {
         width: 100%;
         align-items: center;
+        gap: 10px;
+        margin-top: 30px;
         padding-left: 0;
 
         form {
