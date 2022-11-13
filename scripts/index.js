@@ -23,7 +23,7 @@ function includeHTML() {
 }
 includeHTML();
 
-// Script for signup.html
+// Script for signup.html to toggle password visibility.
 
 const showPassword = document.querySelector(".see-pass");
 const input = document.querySelector(".password input");
@@ -33,5 +33,34 @@ showPassword.addEventListener("click", () => {
     input.type = "password";
   } else if (input.type === "password") {
     input.type = "text";
+  }
+});
+
+// Check strength of password in the register page.
+
+const passwordInput = document.querySelector(".pass");
+const lines = document.querySelectorAll(".lines div");
+const strength = document.querySelectorAll(".strength p")[1];
+
+passwordInput.addEventListener("input", () => {
+  if (passwordInput.value.length >= 8) {
+    lines[0].style.background = "#2B9978";
+  } else {
+    lines[0].style.background = "#D1D1D1";
+  }
+
+  if (/[0-9]/.test(passwordInput.value) && passwordInput.value.length >= 8) {
+    lines[1].style.background = "#2B9978";
+  } else {
+    lines[1].style.background = "#D1D1D1";
+  }
+
+  if (
+    /[^a-zA-Z0-9]/g.test(passwordInput.value) &&
+    passwordInput.value.length >= 8
+  ) {
+    lines[2].style.background = "#2B9978";
+  } else {
+    lines[2].style.background = "#D1D1D1";
   }
 });
