@@ -30,7 +30,7 @@
   font-family: "DM sans";
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .include {
     justify-content: flex-start;
   }
