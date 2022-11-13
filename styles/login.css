@@ -18,6 +18,7 @@ main {
   display: flex;
   padding-left: 100px;
   flex-direction: column;
+  margin-top: 5%;
 }
 main img {
   margin: 20px 0;

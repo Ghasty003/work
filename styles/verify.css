@@ -120,6 +120,7 @@ main .main-content form button {
     gap: 10px;
     margin-top: 30px;
     padding-left: 0;
+    margin-top: 5%;
   }
   main .main-content form {
     display: flex;
