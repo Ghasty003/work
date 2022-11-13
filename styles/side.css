@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 .include h2 {
   font-size: 1.625rem;
@@ -28,4 +28,10 @@
   width: 25.0625rem;
   height: 3rem;
   font-family: "DM sans";
+}
+
+@media (min-width: 1200px) {
+  .include {
+    justify-content: flex-start;
+  }
 }/*# sourceMappingURL=side.css.map */
