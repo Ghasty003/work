@@ -28,6 +28,7 @@ main {
     display: flex;
     padding-left: 6.25rem;
     flex-direction: column;
+    gap: 10px;
 
     img {
         margin: 1.25px 0;
@@ -176,7 +177,7 @@ main {
         p {
             font: {
                 family: $font;
-                size: 0.875;
+                size: 0.875rem;
             }
         }
 
@@ -193,4 +194,47 @@ main {
             }
         }
     }
+}
+
+
+@media (max-width:1050px) {
+    .parent {
+        .include {
+            display: none;
+        }
+    }
+
+    main {
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width:540px) {
+    main {
+        form {
+            div:first-child {
+                width: 300px;
+            }
+            .container {
+                width: 300px;
+
+                div {
+
+                    p {
+                        font-size: 0.810rem;
+                    }
+                }
+            }
+        }
+    }
+
 }

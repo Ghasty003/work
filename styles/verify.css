@@ -125,7 +125,7 @@ main .main-content form div {
 
 main .main-content form div input {
   width: 55px;
-  height: 56px;
+  height: 55px;
   border: 1px solid #D1D1D1;
   border-radius: 8px;
   outline: none;
@@ -143,5 +143,52 @@ main .main-content form button {
   text-align: center;
   margin: 20px 0;
   cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .parent {
+    text-align: center;
+  }
+  .parent .include {
+    display: none;
+  }
+  main {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+  }
+  main .main-content form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  main .main-content form div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .main-content form div input {
+    width: 40px;
+    height: 40px;
+  }
+  main .main-content div:first-child p {
+    font-size: 1.025rem;
+  }
 }
 /*# sourceMappingURL=verify.css.map */

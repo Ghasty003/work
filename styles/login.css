@@ -149,4 +149,30 @@ main form .last-content p:last-child a {
   color: #00855D;
   text-decoration: none;
 }
+
+@media (max-width: 1050px) {
+  .parent {
+    text-align: center;
+  }
+  .parent .include {
+    display: none;
+  }
+  main {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 545px) {
+  main .header p {
+    font-size: 0.875rem;
+  }
+  main form div:first-child, main form div:nth-child(2) {
+    width: 18.75rem;
+    height: 3.125rem;
+  }
+}
 /*# sourceMappingURL=login.css.map */

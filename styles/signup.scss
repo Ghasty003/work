@@ -160,6 +160,7 @@ main {
         display: flex;
         gap: 4px;
         margin-left: 0.3125rem;
+        width: 80%;
         
         p {
             font: {
@@ -182,6 +183,69 @@ main {
             background-color: $custom-bgcolor;
             margin: 5px;
             border-radius: 8px;
+        }
+    }
+}
+
+
+@media (max-width:1050px) {
+    .parent {
+        text-align: center;
+        .include {
+            display: none;
+        }
+    }
+
+    main {
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width:570px) {
+    main {
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            > div {
+                width: 28rem;
+                height: 3rem;
+            }
+
+            .password {
+                .see-pass {
+                    width: 1.15rem;;
+                    top: 15px;
+                }
+            }
+        }
+
+        .strength {
+            justify-content: flex-start;
+            text-align: start;
+            margin-left: -8px;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    main {
+        form {
+            > div {
+                width: 18rem;
+                height: 3rem;
+            }
+        }
+        
+        .lines {
+            div {
+                width: 5rem;
+                height: 2px;
+            }
         }
     }
 }

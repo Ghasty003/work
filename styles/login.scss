@@ -141,3 +141,36 @@ main {
         }
     }
 }
+
+@media (max-width:1050px) {
+    .parent {
+        text-align: center;
+        .include {
+            display: none;
+        }
+    }
+
+    main {
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width:545px) {
+    main {
+        .header {
+            p {
+                font-size: 0.875rem;
+            }
+        }
+
+        form {
+            div:first-child, div:nth-child(2) {
+                width: 18.75rem;
+                height: 3.125rem;
+            }
+        }
+    }
+}

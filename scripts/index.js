@@ -45,14 +45,18 @@ const strength = document.querySelectorAll(".strength p")[1];
 passwordInput.addEventListener("input", () => {
   if (passwordInput.value.length >= 8) {
     lines[0].style.background = "#2B9978";
+    strength.innerHTML = "OK";
   } else {
     lines[0].style.background = "#D1D1D1";
+    strength.innerHTML = "";
   }
 
   if (/[0-9]/.test(passwordInput.value) && passwordInput.value.length >= 8) {
     lines[1].style.background = "#2B9978";
+    strength.innerHTML = "Good";
   } else {
     lines[1].style.background = "#D1D1D1";
+    strength.innerHTML = "OK";
   }
 
   if (
@@ -61,7 +65,9 @@ passwordInput.addEventListener("input", () => {
     /[0-9]/.test(passwordInput.value)
   ) {
     lines[2].style.background = "#2B9978";
+    strength.innerHTML = "Strong";
   } else {
     lines[2].style.background = "#D1D1D1";
+    strength.innerHTML = "Good";
   }
 });

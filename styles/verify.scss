@@ -111,7 +111,7 @@ main {
 
                 input {
                     width: 55px;
-                    height: 56px;
+                    height: 55px;
                     border: 1px solid #D1D1D1;
                     border-radius: 8px;
                     outline: none;
@@ -132,5 +132,58 @@ main {
                 cursor: pointer;
             }
         }
+    }
+}
+
+
+@media (max-width:1050px) {
+    .parent {
+        text-align: center;
+        .include {
+            display: none;
+        }
+    }
+
+    main {
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+
+        .main-content {
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+    
+            }
+        }
+    }
+}
+
+
+@media (max-width:540px) {
+    main {
+
+        .main-content {
+            
+            form {
+                div {
+                    width: 100%;
+                    display: flex;
+
+                    input {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+            div:first-child {
+                p {
+                    font-size: 1.025rem;
+                }
+            }
+        }
+        
     }
 }

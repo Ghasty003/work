@@ -177,6 +177,7 @@ main .strength {
   display: flex;
   gap: 4px;
   margin-left: 0.3125rem;
+  width: 80%;
 }
 
 main .strength p {
@@ -201,5 +202,65 @@ main .lines div {
   background-color: #D1D1D1;
   margin: 5px;
   border-radius: 8px;
+}
+
+@media (max-width: 1050px) {
+  .parent {
+    text-align: center;
+  }
+  .parent .include {
+    display: none;
+  }
+  main {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 570px) {
+  main form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main form > div {
+    width: 28rem;
+    height: 3rem;
+  }
+  main form .password .see-pass {
+    width: 1.15rem;
+    top: 15px;
+  }
+  main .strength {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: start;
+    margin-left: -8px;
+  }
+}
+
+@media (max-width: 480px) {
+  main form > div {
+    width: 18rem;
+    height: 3rem;
+  }
+  main .lines div {
+    width: 5rem;
+    height: 2px;
+  }
 }
 /*# sourceMappingURL=signup.css.map */

@@ -31,6 +31,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 10px;
 }
 
 main img {
@@ -210,7 +211,7 @@ main .ask {
 
 main .ask p {
   font-family: "DM Sans";
-  font-size: 0.875;
+  font-size: 0.875rem;
 }
 
 main .ask p:first-child {
@@ -224,5 +225,45 @@ main .ask p:last-child {
 main .ask p:last-child a {
   color: #00855D;
   text-decoration: none;
+}
+
+@media (max-width: 1050px) {
+  .parent .include {
+    display: none;
+  }
+  main {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+  }
+  main form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  main form div:first-child {
+    width: 300px;
+  }
+  main form .container {
+    width: 300px;
+  }
+  main form .container div p {
+    font-size: 0.810rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */
