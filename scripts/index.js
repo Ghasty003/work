@@ -1,4 +1,4 @@
-//Include side.html file in index.html
+//Include side.html file in neccessary html files.
 
 function includeHTML() {
   let z, i, elmnt, file, xhttp;
@@ -57,7 +57,8 @@ passwordInput.addEventListener("input", () => {
 
   if (
     /[^a-zA-Z0-9]/g.test(passwordInput.value) &&
-    passwordInput.value.length >= 8
+    passwordInput.value.length >= 8 &&
+    /[0-9]/.test(passwordInput.value)
   ) {
     lines[2].style.background = "#2B9978";
   } else {
